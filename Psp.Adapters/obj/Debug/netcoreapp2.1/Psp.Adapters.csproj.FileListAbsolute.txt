@@ -1,0 +1,8 @@
+F:\Repos\psp-proto-orleans\Psp.Adapters\bin\Debug\netcoreapp2.1\Psp.Adapters.deps.json
+F:\Repos\psp-proto-orleans\Psp.Adapters\bin\Debug\netcoreapp2.1\Psp.Adapters.dll
+F:\Repos\psp-proto-orleans\Psp.Adapters\bin\Debug\netcoreapp2.1\Psp.Adapters.pdb
+F:\Repos\psp-proto-orleans\Psp.Adapters\obj\Debug\netcoreapp2.1\Psp.Adapters.csproj.CoreCompileInputs.cache
+F:\Repos\psp-proto-orleans\Psp.Adapters\obj\Debug\netcoreapp2.1\Psp.Adapters.AssemblyInfoInputs.cache
+F:\Repos\psp-proto-orleans\Psp.Adapters\obj\Debug\netcoreapp2.1\Psp.Adapters.AssemblyInfo.cs
+F:\Repos\psp-proto-orleans\Psp.Adapters\obj\Debug\netcoreapp2.1\Psp.Adapters.dll
+F:\Repos\psp-proto-orleans\Psp.Adapters\obj\Debug\netcoreapp2.1\Psp.Adapters.pdb

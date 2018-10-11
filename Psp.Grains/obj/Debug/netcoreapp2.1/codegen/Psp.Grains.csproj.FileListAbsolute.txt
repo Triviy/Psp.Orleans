@@ -1,0 +1,16 @@
+F:\Repos\psp-proto-orleans\Psp.Grains\bin\Debug\netcoreapp2.1\Psp.Grains.deps.json
+F:\Repos\psp-proto-orleans\Psp.Grains\bin\Debug\netcoreapp2.1\Psp.Grains.dll
+F:\Repos\psp-proto-orleans\Psp.Grains\bin\Debug\netcoreapp2.1\Psp.Grains.pdb
+F:\Repos\psp-proto-orleans\Psp.Grains\bin\Debug\netcoreapp2.1\Psp.Core.dll
+F:\Repos\psp-proto-orleans\Psp.Grains\bin\Debug\netcoreapp2.1\Psp.GrainInterfaces.dll
+F:\Repos\psp-proto-orleans\Psp.Grains\bin\Debug\netcoreapp2.1\Psp.GrainInterfaces.pdb
+F:\Repos\psp-proto-orleans\Psp.Grains\bin\Debug\netcoreapp2.1\Psp.Core.pdb
+F:\Repos\psp-proto-orleans\Psp.Grains\obj\Debug\netcoreapp2.1\Psp.Grains.csprojAssemblyReference.cache
+F:\Repos\psp-proto-orleans\Psp.Grains\obj\Debug\netcoreapp2.1\Psp.Grains.csproj.CoreCompileInputs.cache
+F:\Repos\psp-proto-orleans\Psp.Grains\obj\Debug\netcoreapp2.1\Psp.Grains.AssemblyInfoInputs.cache
+F:\Repos\psp-proto-orleans\Psp.Grains\obj\Debug\netcoreapp2.1\Psp.Grains.AssemblyInfo.cs
+F:\Repos\psp-proto-orleans\Psp.Grains\obj\Debug\netcoreapp2.1\Psp.Grains.csproj.CopyComplete
+F:\Repos\psp-proto-orleans\Psp.Grains\obj\Debug\netcoreapp2.1\Psp.Grains.dll
+F:\Repos\psp-proto-orleans\Psp.Grains\obj\Debug\netcoreapp2.1\Psp.Grains.pdb
+F:\Repos\psp-proto-orleans\Psp.Grains\obj\Debug\netcoreapp2.1\codegen\Psp.Grains.csproj.CoreCompileInputs.cache
+F:\Repos\psp-proto-orleans\Psp.Grains\obj\Debug\netcoreapp2.1\codegen\Psp.Grains.AssemblyInfoInputs.cache

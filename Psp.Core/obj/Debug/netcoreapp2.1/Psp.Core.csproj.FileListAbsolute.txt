@@ -1,0 +1,8 @@
+F:\Repos\psp-proto-orleans\Psp.Core\bin\Debug\netcoreapp2.1\Psp.Core.deps.json
+F:\Repos\psp-proto-orleans\Psp.Core\bin\Debug\netcoreapp2.1\Psp.Core.dll
+F:\Repos\psp-proto-orleans\Psp.Core\bin\Debug\netcoreapp2.1\Psp.Core.pdb
+F:\Repos\psp-proto-orleans\Psp.Core\obj\Debug\netcoreapp2.1\Psp.Core.csproj.CoreCompileInputs.cache
+F:\Repos\psp-proto-orleans\Psp.Core\obj\Debug\netcoreapp2.1\Psp.Core.AssemblyInfoInputs.cache
+F:\Repos\psp-proto-orleans\Psp.Core\obj\Debug\netcoreapp2.1\Psp.Core.AssemblyInfo.cs
+F:\Repos\psp-proto-orleans\Psp.Core\obj\Debug\netcoreapp2.1\Psp.Core.dll
+F:\Repos\psp-proto-orleans\Psp.Core\obj\Debug\netcoreapp2.1\Psp.Core.pdb
