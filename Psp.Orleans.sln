@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Psp.Mds", "Psp.Mds\Psp.Mds.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Psp.Host", "Psp.Host\Psp.Host.csproj", "{45784FDA-13EB-4408-9FAE-39107E0B0F40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Psp.OuterWorld", "Psp.OuterWorld\Psp.OuterWorld.csproj", "{7E8A42C8-B427-4F7D-9FC3-7D3E62479C57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{45784FDA-13EB-4408-9FAE-39107E0B0F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45784FDA-13EB-4408-9FAE-39107E0B0F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45784FDA-13EB-4408-9FAE-39107E0B0F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E8A42C8-B427-4F7D-9FC3-7D3E62479C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8A42C8-B427-4F7D-9FC3-7D3E62479C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8A42C8-B427-4F7D-9FC3-7D3E62479C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8A42C8-B427-4F7D-9FC3-7D3E62479C57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

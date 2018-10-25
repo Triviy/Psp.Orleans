@@ -1,8 +1,7 @@
-﻿using System;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Psp.Mds
+namespace Psp.OuterWorld
 {
     class Program
     {
@@ -10,11 +9,10 @@ namespace Psp.Mds
         {
             WebHost.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((context, config) => { })
-                .UseUrls("http://localhost:5034/")
+                .UseUrls("http://localhost:5035/")
                 .UseStartup<Startup>()
                 .Build()
                 .Run();
-            Console.WriteLine("test");
         }
     }
 }
