@@ -1,18 +1,18 @@
 ﻿using System.Collections.Concurrent;
 using Psp.Core.Messages;
 
-namespace Psp.Mds.Queues
+namespace Psp.OuterWorld.Queues
 {
-    internal static class RequestQueue
+    internal static class ResponseQueue
     {
-        private static readonly ConcurrentQueue<PspMessage> Queue = new ConcurrentQueue<PspMessage>();
+        private static readonly ConcurrentQueue<UpdateResponse> Queue = new ConcurrentQueue<UpdateResponse>();
 
-        public static void Enqueue(PspMessage message)
+        public static void Enqueue(UpdateResponse message)
         {
             Queue.Enqueue(message);
         }
 
-        public static PspMessage Dequeue()
+        public static UpdateResponse Dequeue()
         {
             if (Queue.TryDequeue(out var message))
             {

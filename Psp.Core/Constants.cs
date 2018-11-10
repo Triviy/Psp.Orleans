@@ -8,13 +8,15 @@ namespace Psp.Core
         {
             public const string GLuePay = "GluePay";
             public const string Adyen = "Adyen";
+            public const string Citadel = "Citadel";
 
             public static List<string> GetAll()
             {
                 return new List<string>
                 {
                     GLuePay,
-                    Adyen
+                    Adyen,
+                    Citadel
                 };
             }
         }

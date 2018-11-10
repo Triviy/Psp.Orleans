@@ -1,38 +1,35 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Psp.Core.Messages;
 using Psp.Mds.Queues;
+using System;
 
-namespace Psp.Mds.Handlers
+namespace Psp.Mds.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class QueueController : ControllerBase
     {
-        private readonly IRequestQueue _queue;
-
-        public QueueController(IRequestQueue queue)
-        {
-            _queue = queue;
-        }
-
         [HttpPost]
         public IActionResult AddPaymentRequest(PaymentRequest request)
         {
-            _queue.Enqueue(request);
+            RequestQueue.Enqueue(request);
+            Console.WriteLine($"+++ PaymentRequest: {request.PublicPaymentId}");
             return Ok();
         }
 
         [HttpPost]
         public IActionResult AddProviderReconciliation(ProviderReconciliation request)
         {
-            _queue.Enqueue(request);
+            RequestQueue.Enqueue(request);
+            Console.WriteLine($"+++ ProviderReconciliation: {request.ProviderAccount}");
             return Ok();
         }
 
         [HttpPost]
         public IActionResult AddPaymentReconciliation(PaymentReconciliation request)
         {
-            _queue.Enqueue(request);
+            RequestQueue.Enqueue(request);
+            Console.WriteLine($"+++ PaymentReconciliation: {request.ProviderAccount}");
             return Ok();
         }
     }
