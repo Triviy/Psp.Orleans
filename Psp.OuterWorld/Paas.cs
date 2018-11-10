@@ -49,6 +49,6 @@ namespace Psp.OuterWorld
         {
             var accounts = Constants.PaymentMethods.GetAll();
             return accounts[Random.Next(accounts.Count - 1)];
-        } 
+        }
     }
 }

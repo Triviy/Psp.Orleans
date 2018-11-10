@@ -10,9 +10,7 @@ namespace Psp.Mds
         public static void Main(string[] args)
         {
             Task.Run(() => RunHost(args));
-
             Task.Run(() => Dispatcher.Start().GetAwaiter().GetResult());
-
             Console.ReadLine();
         }
 

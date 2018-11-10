@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Psp.Mds.Queues;
+using Psp.Silo.Client;
 
 namespace Psp.Mds
 {
@@ -10,16 +9,19 @@ namespace Psp.Mds
     {
         public static async Task Start()
         {
-            while (true)
+            using (var client = await OrleansClient.StartWithRetries())
             {
-                var message = RequestQueue.Dequeue();
-                if (message == null)
+                while (true)
                 {
-                    await Task.Delay(1_000);
-                    continue;
+                    var message = RequestQueue.Dequeue();
+                    if (message == null)
+                    {
+                        await Task.Delay(1_000);
+                        continue;
+                    }
+                    Console.WriteLine($"-- {message}");
+                    Task.Run(async () => await client.Dispatch(message));
                 }
-                Console.WriteLine($"-- {message}");    
-
             }
         }
     }

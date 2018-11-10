@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Psp.Mds", "Psp.Mds\Psp.Mds.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Psp.OuterWorld", "Psp.OuterWorld\Psp.OuterWorld.csproj", "{7E8A42C8-B427-4F7D-9FC3-7D3E62479C57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Psp.Host", "Psp.Host\Psp.Host.csproj", "{0F06251F-75E7-4671-8E35-99B5334F51FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Psp.Host", "Psp.Host\Psp.Host.csproj", "{0F06251F-75E7-4671-8E35-99B5334F51FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Psp.Silo.Client", "Psp.Silo.Client\Psp.Silo.Client.csproj", "{4CEF5743-7473-4D00-AC83-CFA7F7A1B51E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{0F06251F-75E7-4671-8E35-99B5334F51FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F06251F-75E7-4671-8E35-99B5334F51FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F06251F-75E7-4671-8E35-99B5334F51FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CEF5743-7473-4D00-AC83-CFA7F7A1B51E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CEF5743-7473-4D00-AC83-CFA7F7A1B51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CEF5743-7473-4D00-AC83-CFA7F7A1B51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CEF5743-7473-4D00-AC83-CFA7F7A1B51E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{1BD20146-A685-4CFD-B9DA-E883200A2A1E} = {95E0C30A-DDBF-43BF-B9F9-15D7841BBFA4}
 		{12C42BFB-7799-4983-BA2E-FB74B21385F7} = {3A80C486-3BEF-4534-8B0D-171A9D545566}
 		{0F06251F-75E7-4671-8E35-99B5334F51FE} = {3A80C486-3BEF-4534-8B0D-171A9D545566}
+		{4CEF5743-7473-4D00-AC83-CFA7F7A1B51E} = {B86A67E1-B7B8-40AE-8998-421109739B02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9FBDA4A2-F17B-4274-A132-8DDDB552DBC3}

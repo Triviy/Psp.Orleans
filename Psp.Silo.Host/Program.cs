@@ -25,6 +25,7 @@ namespace Psp.Silo.Host
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
+                Console.ReadLine();
                 return 1;
             }
         }
@@ -36,7 +37,11 @@ namespace Psp.Silo.Host
             int gatewayPort = 30000;
             var siloAddress = IPAddress.Loopback;
             var builder = new SiloHostBuilder()
-                .Configure<ClusterOptions>(options => options.ClusterId = "helloworldcluster")
+                .Configure<ClusterOptions>(options =>
+                {
+                    options.ServiceId = "PspOrleans";
+                    options.ClusterId = "psp-cluster";
+                })
                 .UseDevelopmentClustering(options => options.PrimarySiloEndpoint = new IPEndPoint(siloAddress, siloPort))
                 .ConfigureEndpoints(siloAddress, siloPort, gatewayPort)
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(DispatcherGrain).Assembly).WithReferences())

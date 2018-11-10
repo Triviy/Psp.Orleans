@@ -10,9 +10,11 @@ namespace Psp.Grains
     [StatelessWorker]
     public class DispatcherGrain: Grain, IDispatcherGrain
     {
-        public Task Dispatch(PspMessage message)
+        public async Task Dispatch(PspMessage message)
         {
-            throw new NotImplementedException();
+            if (message is PaymentRequest paymentRequest)
+                Console.WriteLine($"Working on {paymentRequest.PublicPaymentId}");
+            await Task.Delay(10_000);
         }
     }
 }

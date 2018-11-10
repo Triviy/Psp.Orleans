@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Psp.Core\Psp.Core.csproj" />
+    <ProjectReference Include="..\Psp.Silo.Client\Psp.Silo.Client.csproj" />
   </ItemGroup>
 
 </Project>
