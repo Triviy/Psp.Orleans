@@ -4,7 +4,7 @@ namespace Psp.Core
 {
     public static class Constants
     {
-        public static class PaymentMethods
+        public static class ProviderAccounts
         {
             public const string GLuePay = "GluePay";
             public const string Adyen = "Adyen";

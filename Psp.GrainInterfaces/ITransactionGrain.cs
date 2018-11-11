@@ -1,15 +1,13 @@
 ﻿using System.Threading.Tasks;
 using Orleans;
-using Psp.Core;
-using Psp.Core.Entities;
 using Psp.Core.Messages;
 
 namespace Psp.GrainInterfaces
 {
-    public interface ITransactionGrain: IGrain
+    public interface ITransactionGrain: IGrainWithStringKey
     {
         Task Create(PaymentRequest request);
-        Task Update(UpdateResponse response);
-        Task<Transaction> Get(string publicPaymentId);
+        Task Check(PaymentReconciliation request);
+        Task Update(ProviderNotification request);
     }
 }

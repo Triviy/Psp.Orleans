@@ -20,7 +20,7 @@ namespace Psp.Mds
                         continue;
                     }
                     Console.WriteLine($"-- {message}");
-                    Task.Run(async () => await client.Dispatch(message));
+                    Task.Run(async () => await client.Process(message));
                 }
             }
         }

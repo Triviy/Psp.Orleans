@@ -47,7 +47,7 @@ namespace Psp.OuterWorld
 
         private static string GetRandomProviderAccount()
         {
-            var accounts = Constants.PaymentMethods.GetAll();
+            var accounts = Constants.ProviderAccounts.GetAll();
             return accounts[Random.Next(accounts.Count - 1)];
         }
     }

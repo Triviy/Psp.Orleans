@@ -2,9 +2,11 @@
 using System;
 using System.Net;
 using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
 using Orleans.Configuration;
 using Psp.Grains;
 using Orleans;
+using Psp.BusinessLogic.Configuration;
 
 namespace Psp.Silo.Host
 {
@@ -43,10 +45,14 @@ namespace Psp.Silo.Host
                     options.ClusterId = "psp-cluster";
                 })
                 .UseDevelopmentClustering(options => options.PrimarySiloEndpoint = new IPEndPoint(siloAddress, siloPort))
+
                 .ConfigureEndpoints(siloAddress, siloPort, gatewayPort)
-                .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(DispatcherGrain).Assembly).WithReferences())
-                .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(TransactionGrain).Assembly).WithReferences());
-                //.ConfigureLogging(logging => logging.AddConsole());
+                .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(TransactionGrain).Assembly).WithReferences())
+                .ConfigureServices(services =>
+                {
+                    services.RegisterBusinessLogicDependencies();
+                });
+            //.ConfigureLogging(logging => logging.AddConsole());
 
             var host = builder.Build();
             await host.StartAsync();

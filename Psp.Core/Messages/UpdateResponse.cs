@@ -6,5 +6,6 @@ namespace Psp.Core.Messages
     {
         public string PublicPaymentId { get; set; }
         public TransactionStatus Status { get; set; }
+        public string Response { get; set; }
     }
 }

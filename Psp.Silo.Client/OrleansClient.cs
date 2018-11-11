@@ -10,7 +10,7 @@ namespace Psp.Silo.Client
 {
     public class OrleansClient
     {
-        public static async Task<DispatcherClient> StartWithRetries(int initializeAttemptsBeforeFailing = 5)
+        public static async Task<MessageProcessor> StartWithRetries(int initializeAttemptsBeforeFailing = 5)
         {
             int attempt = 0;
             IClusterClient client;
@@ -27,7 +27,7 @@ namespace Psp.Silo.Client
                             options.ClusterId = "psp-cluster";
                         })
                         .UseStaticClustering(options => options.Gateways.Add((new IPEndPoint(siloAddress, gatewayPort)).ToGatewayUri()))
-                        .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(IDispatcherGrain).Assembly).WithReferences())
+                        .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(ITransactionGrain).Assembly).WithReferences())
                         .Build();
 
                     await client.Connect();
@@ -46,7 +46,7 @@ namespace Psp.Silo.Client
                 }
             }
 
-            return new DispatcherClient(client);
+            return new MessageProcessor(client);
         }
     }
 }

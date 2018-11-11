@@ -1,25 +1,41 @@
 ﻿using System.Threading.Tasks;
+using Orleans;
+using Psp.BusinessLogic.Handlers;
 using Psp.Core.Entities;
 using Psp.Core.Messages;
 using Psp.GrainInterfaces;
 
 namespace Psp.Grains
 {
-    public class TransactionGrain : ITransactionGrain
+    public class TransactionGrain : Grain<Transaction>, ITransactionGrain
     {
+        private readonly IPaymentRequestHandler _paymentRequestHandler;
+        private readonly IPaymentReconciliationHandler _paymentReconciliationHandler;
+        private readonly IProviderNotificationHandler _providerNotificationHandler;
+
+        public TransactionGrain(
+            IPaymentRequestHandler paymentRequestHandler,
+            IPaymentReconciliationHandler paymentReconciliationHandler,
+            IProviderNotificationHandler providerNotificationHandler)
+        {
+            _paymentRequestHandler = paymentRequestHandler;
+            _paymentReconciliationHandler = paymentReconciliationHandler;
+            _providerNotificationHandler = providerNotificationHandler;
+        }
+
         public Task Create(PaymentRequest request)
         {
-            throw new System.NotImplementedException();
+            return _paymentRequestHandler.Handle(request);
         }
 
-        public Task Update(UpdateResponse response)
+        public Task Check(PaymentReconciliation request)
         {
-            throw new System.NotImplementedException();
+            return _paymentReconciliationHandler.Handle(request, State);
         }
 
-        public Task<Transaction> Get(string publicPaymentId)
+        public Task Update(ProviderNotification request)
         {
-            throw new System.NotImplementedException();
+            return _providerNotificationHandler.Handle(request, State);
         }
     }
 }
